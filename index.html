@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/validation.css">
   <title>banking-form</title>
 
 </head>
 <body>
-  <h1>banking-form</h1>
+  <header>
+    <h1>banking-form</h1>
+  </header>
+  <main class="container">
     <form>
       <fieldset>
         <legend>Applicant Information:</legend>
@@ -26,7 +30,7 @@
             <input type="text" name="employerAddress"><br>
         
 <!--potentially add radio to container of checkbox inputs--> 
-          <fieldset for="loanType">
+          <fieldset for="loanType" id="loanType">
             <legend>Type of Loan:</legend>
               <label for="commercial">Commercial</label>
                 <input type="checkbox" id="commercial" name="loanType"><br>
@@ -39,10 +43,11 @@
           </fieldset>
       </fieldset>
     </form>
+  </main>
   <footer>
-    <div>
-      <!-- <label for="h3">Current Assignment:</label>
-        <h3>nashville-software-school/front-end-milestones/the-static-web/exercises/banking-form</h3> -->
+    <div class="copyWrite">
+      <label for="h3">This assignment:</label>
+        <h3>/the-static-web/exercises/banking-form</h3>
       <h4>&copy;rue.TH</h4>
     </div>
   </footer>
