@@ -7,35 +7,44 @@
 </head>
 <body>
   <h1>banking-form</h1>
-    
     <form>
       <fieldset>
-        <legend>Applicant Information</legend>
-      
-        <!--Applicant's First Name-->
-        <label for="firstName">First name: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <label for="middleInitial">Middle initial: </label>
-          <input type="text" value="middleInitial" name="middleInitial"><br>
-        <label for="lastName">Last name: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <label for="appAddress">Home address: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <label for="appOccupation">Occupation: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <label for="employer">Employer: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <label for="employerAddress">Employer address: </label>
-          <input type="text" value="firstName" name="firstName"><br>
-        <fieldset for="loanType">
-          <legend>Type of loan:</legend>
-            <label for="commercial">Commercial</label>
-              <input type="checkbox" value="commercial" name="loanType"><br>
-            <label for="realEstate">Real estate</label>
-              <input type="checkbox" value="realEstate" name="realEstate"><br>
-              
-        </fieldset>
+        <legend>Applicant Information:</legend>
+          <label for="firstName">First name: </label>
+            <input type="text" name="firstName"><br>
+          <label for="middleInitial">Middle initial: </label>
+            <input type="text" name="middleInitial"><br>
+          <label for="lastName">Last name: </label>
+            <input type="text" name="lastName"><br>
+          <label for="address">Home address: </label>
+            <input type="text" name="address"><br>
+          <label for="occupation">Occupation: </label>
+            <input type="text"  name="occupation"><br>
+          <label for="employer">Employer: </label>
+            <input type="text" name="employer"><br>
+          <label for="employerAddress">Employer address: </label>
+            <input type="text" name="employerAddress"><br>
+        
+<!--potentially add radio to container of checkbox inputs--> 
+          <fieldset for="loanType">
+            <legend>Type of Loan:</legend>
+              <label for="commercial">Commercial</label>
+                <input type="checkbox" id="commercial" name="loanType"><br>
+              <label for="realEstate">Real estate</label>
+                <input type="checkbox" id="realEstate" name="loanType"><br>
+              <label for="personal">Personal</label>
+                <input type="checkbox" value="personal" name="loanType"><br>
+               <label for="mortgage">Mortgage</label>
+                <input type="checkbox" value="mortgage" name="loanType"><br>
+          </fieldset>
       </fieldset>
     </form>
+  <footer>
+    <div>
+      <!-- <label for="h3">Current Assignment:</label>
+        <h3>nashville-software-school/front-end-milestones/the-static-web/exercises/banking-form</h3> -->
+      <h4>&copy;rue.TH</h4>
+    </div>
+  </footer>
 </body>
 </html>
