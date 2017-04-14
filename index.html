@@ -13,7 +13,7 @@
   <main class="container">
     <form>
       <fieldset>
-        <legend>Applicant Information:</legend>
+        <legend>Applicant Information</legend>
           <label for="firstName">First name: </label>
             <input type="text" name="firstName"><br>
           <label for="middleInitial">Middle initial: </label>
@@ -37,10 +37,21 @@
               <label for="realEstate">Real estate</label>
                 <input type="checkbox" id="realEstate" name="loanType"><br>
               <label for="personal">Personal</label>
-                <input type="checkbox" value="personal" name="loanType"><br>
+                <input type="checkbox" id="personal" name="loanType"><br>
                <label for="mortgage">Mortgage</label>
-                <input type="checkbox" value="mortgage" name="loanType"><br>
+                <input type="checkbox" id="mortgage" name="loanType"><br>
           </fieldset>
+          <label for="valueRequested">Requested amount of loan:</label>
+            <input type="text" name="valueRequested"><br>
+        <fieldset for="loanLength" id="loanLength">
+          <legend>Loan duration:</legend>
+            <label for="5yrs">Five (5) years</label>
+              <input type="radio" id="5yrs" name="loanLength"><br>
+            <label for="15yrs">Fifteen (15) years</label>
+              <input type="radio" id="15yrs" name="loanLength"><br>
+            <label for="30yrs">Thirty (30) years</label>
+              <input type="radio" id="30yrs" name="loanLength"><br><br>
+        </fieldset>
       </fieldset>
     </form>
   </main>
