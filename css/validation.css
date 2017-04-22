@@ -14,10 +14,77 @@ main {
   padding-bottom: 5%;
 }
 
-#loanType {
+.textFields {
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+}
+.textFields label {
+  float: left;
+  text-align: left
+}
+.textFields input {
   float: right;
 }
 
+#leftFields {
+  float: left;
+  width: 45%;
+}
+
+#rightFields {
+  float: right;
+  width: 45%;
+}
+#loanType {
+  /*float: left;*/
+}
+
+#loanLength {
+/*  float: left;*/
+}
+
+.clickThings label {
+  text-align: left;
+  float: left;
+}
+
+.clickThings input {
+  margin-top: -1px;
+  float: right;
+  margin-right: 0;
+}
+
+#specialConditions {
+  
+
+}
+#clickThings {
+  float:left;
+  width: 35%;
+  height: 375px;
+}
+.clickThings {
+  display: block;
+  vertical-align: middle;
+  margin-top: 2%;
+}
+#commentsBox {
+  float: right;
+  width: 57%;
+  height: 375px;
+}
+
+#comment-textarea {
+  width: 96%;
+  padding: 0;
+  margin-left: 2%;
+  height: 94%;
+
+}
 footer {
   clear: both;
   text-align: center;

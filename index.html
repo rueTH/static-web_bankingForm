@@ -13,44 +13,74 @@
   <main class="container">
     <form>
       <fieldset>
-        <legend>Applicant Information</legend>
-          <label for="firstName">First name: </label>
-            <input type="text" name="firstName"><br>
-          <label for="middleInitial">Middle initial: </label>
-            <input type="text" name="middleInitial"><br>
-          <label for="lastName">Last name: </label>
-            <input type="text" name="lastName"><br>
-          <label for="address">Home address: </label>
-            <input type="text" name="address"><br>
-          <label for="occupation">Occupation: </label>
-            <input type="text"  name="occupation"><br>
-          <label for="employer">Employer: </label>
-            <input type="text" name="employer"><br>
-          <label for="employerAddress">Employer address: </label>
-            <input type="text" name="employerAddress"><br>
-        
+        <legend>Loan Application</legend>
+        <fieldset for="textFields" id="textFields">
+          <legend>Applicant Information</legend>
+          <div class="textFields" id="leftFields">
+            <label for="firstName">First name: </label>
+              <input type="text" name="firstName"><br><br>
+            <label for="middleInitial">Middle initial: </label>
+              <input type="text" name="middleInitial"><br><br>
+            <label for="lastName">Last name: </label>
+              <input type="text" name="lastName"><br><br>
+            <label for="address">Home address: </label>
+              <input type="text" name="address"><br><br>
+            <label for="emailField">E-mail address: </label>
+              <input type="text" name="emailField"><br><br>
+            <label for="phoneField">Telephone number: </label>
+              <input type="text" name="phoneField"><br><br>    
+          </div>
+          <div class="textFields" id="rightFields"> 
+            <label for="occupation">Occupation: </label>
+              <input type="text"  name="occupation"><br><br>
+            <label for="linkedIn">LinkedIn URL: </label>
+              <input type="text" name="linkedIn"><br><br>
+            <label for="employer">Employer: </label>
+              <input type="text" name="employer"><br><br>
+            <label for="employerAddress">Employer address: </label>
+              <input type="text" name="employerAddress"><br><br>
+            <label for="amtRequested">Requested amount of loan: </label>
+              <input type="text" name="amtRequested"><br><br>
+          </div>
+        </fieldset>
 <!--potentially add radio to container of checkbox inputs--> 
-          <fieldset for="loanType" id="loanType">
-            <legend>Type of Loan:</legend>
+        <fieldset for="commentsBox" id="commentsBox">
+          <legend>Additional comments:</legend>
+            <textarea name="commentsBox" id="comment-textarea"></textarea>
+        </fieldset>
+        <fieldset for="clickThings" id="clickThings">
+          <legend>Loan information</legend>
+          <fieldset for="loanType" class="clickThings" id="loanType">
+            <legend>Type of Loan</legend>
               <label for="commercial">Commercial</label>
-                <input type="checkbox" id="commercial" name="loanType"><br>
+                <input type="checkbox" class="clickThings" id="commercial" name="loanType"><br>
               <label for="realEstate">Real estate</label>
-                <input type="checkbox" id="realEstate" name="loanType"><br>
+                <input type="checkbox" class="clickThings" id="realEstate" name="loanType"><br>
               <label for="personal">Personal</label>
-                <input type="checkbox" id="personal" name="loanType"><br>
-               <label for="mortgage">Mortgage</label>
-                <input type="checkbox" id="mortgage" name="loanType"><br>
+                <input type="checkbox" class="clickThings" id="personal" name="loanType"><br>
+              <label for="mortgage">Mortgage</label>
+                <input type="checkbox"  class="clickThings" id="mortgage" name="loanType"><br>
           </fieldset>
-          <label for="valueRequested">Requested amount of loan:</label>
-            <input type="text" name="valueRequested"><br>
-        <fieldset for="loanLength" id="loanLength">
-          <legend>Loan duration:</legend>
-            <label for="5yrs">Five (5) years</label>
-              <input type="radio" id="5yrs" name="loanLength"><br>
-            <label for="15yrs">Fifteen (15) years</label>
-              <input type="radio" id="15yrs" name="loanLength"><br>
-            <label for="30yrs">Thirty (30) years</label>
-              <input type="radio" id="30yrs" name="loanLength"><br><br>
+          <fieldset for="loanLength" class="clickThings" id="loanLength">
+            <legend>Loan duration</legend>
+              <label for="5yrs">Five (5) years</label>
+                <input type="radio" class="clickThings" id="5yrs" name="loanLength"><br>
+              <label for="15yrs">Fifteen (15) years</label>
+                <input type="radio" class="clickThings" id="15yrs" name="loanLength"><br>
+              <label for="30yrs">Thirty (30) years</label>
+                <input type="radio" class="clickThings" id="30yrs" name="loanLength"><br>
+          </fieldset>
+          <fieldset for="specialConditions" class="clickThings" id="specialConditions">
+            <legend>Special conditions</legend>
+              <label for="downPayment">I have a down payment</label>
+                <input type="checkbox"  class="clickThings" id="downPayment" name="specialConditions"><br>
+              <label for="nonResident">Out-of-state resident</label>
+                <input type="checkbox" class="clickThings" id="nonResident" name="specialConditions"><br>
+              <label for="married">Married</label>
+                <input type="checkbox" class="clickThings" id="married" name="specialConditions"><br>
+              <label for="co-signed">Loan will be co-signed</label>
+                <input type="checkbox" class="clickThings" id="co-signed" name="specialConditions"><br>
+          </fieldset>
         </fieldset>
       </fieldset>
     </form>
